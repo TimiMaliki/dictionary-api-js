@@ -1,24 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LightSwitch</title>
-    <link rel="stylesheet" href="/index.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"> -->
+    <link rel="stylesheet" href="./src/css/index.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
 </head>
-<body>
 
-    <div class="container dark light">
-        <div class="box dark light">
-            <div class="btn dark light">
-                <p class="on">On</p>
-                <div class="turnOff">
-                    <p class="off"> Off</p>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Timi Maliki</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active"> Home</a></li>
+                    <li class="nav__item"><a href="https://github.com/TimiMaliki" class="nav__link">GitHub</a></li>
+                    <li class="nav__item"><a href="https://www.linkedin.com/in/timimaliki/"
+                            class="nav__link">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <!------=============== NAVBAR ==================------->
+
+    <!------=============== JOKES API ==================------->
+
+    <section>
+        <audio id="sound"></audio>
+        <div class="wrapper">
+            <div class="dictionary-container">
+
+                <div class="input flex">
+                    <input type="text" placeholder="Enter a word" id="input">
+                    <button class="btn button-1">Search</button>
+                </div>
+                <div class="dataBody">
+
                 </div>
             </div>
+    </section>
+
+
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer  bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <h2><a href="#" class="footer__logo">Timi Maliki</a></h2>
+                <span class="footer__description">
+                    <ul>
+                        <li>AgeCalculator App</li>
+                    </ul>
+                </span>
+                <div>
+                    <a href="#" class="https://github.com/TimiMaliki"><i class="bi bi-github"></i></a>
+                    <a href="#" class="https://www.linkedin.com/in/timimaliki/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h2 class="footer__title">Services</h2>
+                <ul>
+                    <li><a href="#" class="footer__link">Web Development</a></li>
+                    <li><a href="#" class="footer__link">Hosting</a></li>
+                    <li><a href="#" class="footer__link">Software Engineer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h2 class="footer__title">Address</h2>
+                <ul>
+                    <li>Ebonyi State - Nigeria</li>
+                    <li>No 4 odi Nwankwo strt.</li>
+                    <li>+234 8102850113</li>
+                    <li>malikitimi@email.com</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <script src="/index.js"></script>
+
+        <p class="footer__copy">&#169; 2024 Maliki. All right reserved</p>
+    </footer>
+
+
+
+    <script src="./src/js/main.js"></script>
 </body>
+
 </html>
