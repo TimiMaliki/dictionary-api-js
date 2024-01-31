@@ -171,6 +171,8 @@ input {
     position: absolute;
     top: 50%;
     left: 10%;
+    display:flex ;
+    flex-wrap: wrap;
 }
 .example{
     border-right: 2px solid rgb(244, 115, 136);
@@ -178,6 +180,8 @@ input {
     position: absolute;
     top: 70%;
     left: 10%;
+    display:flex ;
+    flex-wrap: wrap;
 }
 i {
     font-size: 20px;
@@ -232,7 +236,25 @@ i {
         background-color: #f4f4f4;
         transition: .5s;
     }
-
+    .dictionary-container{
+        width: 350px;
+        height: 750px;
+    }
+    
+    .flex {
+      display: grid;
+    }
+    input {
+        width: 200px;
+    }
+    .definiton {
+        font-size: 15px;
+        width: 240px;
+    }
+    .example{
+      font-size: 15px;
+      width: 240px;
+    }
 }
 
 .nav__item {
